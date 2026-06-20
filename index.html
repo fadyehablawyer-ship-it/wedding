@@ -122,6 +122,58 @@
         <p id="copyright">© 2026 Fady & Mariam. All Rights Reserved.</p>
     </footer>
 
-    <script src="app.js"></script>
-</body>
+<section id="gallery" class="py-24 bg-white px-4 text-center">
+        <h3 class="font-luxury text-5xl text-gold mb-4 animate-fade-in">عقدنا قِراننا</h3>
+        <p class="text-gray-500 max-w-md mx-auto mb-16 font-light">لمحات من حبنا، شاركونا فرحة العمر</p>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
+            
+            <a href="gallery1.jpg" data-fancybox="wedding-gallery" data-caption="فادي ومريم - فرحة البداية" class="relative group overflow-hidden rounded-2xl shadow-lg border-2 border-gold/10 aspect-[4/3] block transition transform hover:scale-105">
+                <img src="gallery1.jpg" alt="Fady & Mariam Wedding Gallery 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gold/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <i class="fas fa-search-plus text-white text-3xl"></i>
+                </div>
+            </a>
+
+            <a href="gallery2.jpg" data-fancybox="wedding-gallery" data-caption="لحظات من السعادة" class="relative group overflow-hidden rounded-2xl shadow-lg border-2 border-gold/10 aspect-[4/3] block transition transform hover:scale-105">
+                <img src="gallery2.jpg" alt="Fady & Mariam Wedding Gallery 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gold/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <i class="fas fa-search-plus text-white text-3xl"></i>
+                </div>
+            </a>
+
+            <a href="gallery3.jpg" data-fancybox="wedding-gallery" data-caption="حب يجمعنا دائماً" class="relative group overflow-hidden rounded-2xl shadow-lg border-2 border-gold/10 aspect-[4/3] block transition transform hover:scale-105">
+                <img src="gallery3.jpg" alt="Fady & Mariam Wedding Gallery 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gold/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <i class="fas fa-search-plus text-white text-3xl"></i>
+                </div>
+            </a>
+
+            <a href="gallery4.jpg" data-fancybox="wedding-gallery" data-caption="معاً وإلى الأبد" class="relative group overflow-hidden rounded-2xl shadow-lg border-2 border-gold/10 aspect-[4/3] block transition transform hover:scale-105">
+                <img src="gallery4.jpg" alt="Fady & Mariam Wedding Gallery 4" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gold/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <i class="fas fa-search-plus text-white text-3xl"></i>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            // إعدادات اختيارية لتخصيص المعرض
+            Thumbs: {
+                autoStart: true,
+            },
+            Toolbar: {
+                display: {
+                    left: ["infobar"],
+                    middle: ["zoomIn", "zoomOut", "toggle1to1"],
+                    right: ["slideshow", "fullscreen", "download", "close"],
+                },
+            },
+        });
+    </script></body>
 </html>
