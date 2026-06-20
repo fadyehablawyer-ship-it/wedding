@@ -29,40 +29,40 @@
         <i class="fas fa-music animate-pulse"></i>
     </button>
 
-    <!-- Hero Section -->
-    <section class="min-h-screen flex flex-col justify-center items-center text-center relative px-4 bg-white shadow-sm">
-        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cream-paper.png')]"></div>
+    <!-- Hero Section مع صورتكم الخلفية -->
+    <section class="min-h-screen flex flex-col justify-center items-center text-center relative px-4 bg-cover bg-center" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.75), rgba(252,249,242,0.95)), url('gallery1.jpg');">
+        <div class="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/cream-paper.png')]"></div>
         
         <!-- Personalized Welcome -->
-        <div id="welcome-container" class="hidden mb-6 bg-amber-50/60 border border-gold/30 p-4 rounded-lg max-w-md animate-fade-in">
-            <p class="text-sm text-amber-800">تشريفكم يسعدنا</p>
+        <div id="welcome-container" class="hidden mb-6 bg-white/90 backdrop-blur-md border border-gold/40 p-4 rounded-xl max-w-md shadow-lg">
+            <p class="text-xs tracking-widest text-amber-800 font-semibold uppercase">تشريفكم يسعدنا</p>
             <h3 id="guest-name-welcome" class="text-xl font-bold text-gray-900 mt-1"></h3>
         </div>
 
-        <h2 class="font-luxury text-6xl md:text-8xl text-gold my-4 animate-bounce">Fady & Mariam</h2>
-        <p class="text-xl md:text-2xl tracking-widest text-gray-600 uppercase mb-8">We are getting married</p>
+        <h2 class="font-luxury text-6xl md:text-8xl text-gold my-2 drop-shadow-sm">Fady & Mariam</h2>
+        <p class="text-xl md:text-2xl tracking-widest text-gray-600 uppercase mb-8 font-light">We are getting married</p>
         
         <!-- Countdown Timer -->
-        <div class="grid grid-cols-4 gap-4 max-w-lg w-full px-4 mb-12">
-            <div class="bg-amber-50/40 p-4 rounded-lg border border-gold/20 backdrop-blur-sm">
+        <div class="grid grid-cols-4 gap-3 max-w-lg w-full px-2 mb-12">
+            <div class="bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-gold/30 shadow-sm">
                 <span id="days" class="block text-2xl md:text-4xl font-bold text-gold">00</span>
-                <span class="text-xs uppercase text-gray-500">يوم</span>
+                <span class="text-xs font-semibold text-gray-500">يوم</span>
             </div>
-            <div class="bg-amber-50/40 p-4 rounded-lg border border-gold/20 backdrop-blur-sm">
+            <div class="bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-gold/30 shadow-sm">
                 <span id="hours" class="block text-2xl md:text-4xl font-bold text-gold">00</span>
-                <span class="text-xs uppercase text-gray-500">ساعة</span>
+                <span class="text-xs font-semibold text-gray-500">ساعة</span>
             </div>
-            <div class="bg-amber-50/40 p-4 rounded-lg border border-gold/20 backdrop-blur-sm">
+            <div class="bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-gold/30 shadow-sm">
                 <span id="minutes" class="block text-2xl md:text-4xl font-bold text-gold">00</span>
-                <span class="text-xs uppercase text-gray-500">دقيقة</span>
+                <span class="text-xs font-semibold text-gray-500">دقيقة</span>
             </div>
-            <div class="bg-amber-50/40 p-4 rounded-lg border border-gold/20 backdrop-blur-sm">
+            <div class="bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-gold/30 shadow-sm">
                 <span id="seconds" class="block text-2xl md:text-4xl font-bold text-gold">00</span>
-                <span class="text-xs uppercase text-gray-500">ثانية</span>
+                <span class="text-xs font-semibold text-gray-500">ثانية</span>
             </div>
         </div>
 
-        <a href="#rsvp" class="bg-gold text-white px-8 py-3 rounded-full shadow-md hover:bg-opacity-90 transition transform hover:-translate-y-0.5">تأكيد الحضور</a>
+        <a href="#rsvp" class="bg-gold text-white px-10 py-3.5 rounded-full font-semibold shadow-lg hover:bg-opacity-90 transition transform hover:-translate-y-1">تأكيد الحضور</a>
     </section>
 
     <!-- Details Section -->
@@ -75,7 +75,7 @@
                 <h4 class="text-xl font-bold mb-2">المراسم الإكليلية</h4>
                 <p class="text-gray-600 mb-4">كنيسة السيدة العذراء مريم بالدقي</p>
                 <p class="text-sm text-gray-500 mb-6">الأحد، 27 سبتمبر 2026</p>
-                <a target="_blank" href="https://maps.google.com" class="inline-block border border-gold text-gold px-6 py-2 rounded-full hover:bg-gold hover:text-white transition">الموقع على الخريطة</a>
+                <a target="_blank" href="https://maps.app.goo.gl/wS78U6Y8vBqM9e7M9" class="inline-block border border-gold text-gold px-6 py-2 rounded-full hover:bg-gold hover:text-white transition">الموقع على الخريطة</a>
             </div>
             <!-- Hall -->
             <div class="bg-white p-8 rounded-2xl shadow-sm border border-gold/20">
@@ -83,13 +83,50 @@
                 <h4 class="text-xl font-bold mb-2">حفل الزفاف</h4>
                 <p class="text-gray-600 mb-4">قاعة قصر الشوق - دار الأسلحة والذخيرة</p>
                 <p class="text-sm text-gray-500 mb-6">صلاح سالم، القاهرة</p>
-                <a target="_blank" href="https://maps.google.com" class="inline-block border border-gold text-gold px-6 py-2 rounded-full hover:bg-gold hover:text-white transition">الموقع على الخريطة</a>
+                <a target="_blank" href="https://maps.app.goo.gl/wS78U6Y8vBqM9e7M9" class="inline-block border border-gold text-gold px-6 py-2 rounded-full hover:bg-gold hover:text-white transition">الموقع على الخريطة</a>
             </div>
         </div>
     </section>
 
+    <!-- معرض صور العرسان الفاخر -->
+    <section id="gallery" class="py-24 bg-white px-4 text-center">
+        <h3 class="font-luxury text-5xl text-gold mb-4">معرض صور فرحنا</h3>
+        <p class="text-gray-500 max-w-md mx-auto mb-16 font-light">لمحات من حبنا، شاركونا فرحة العمر</p>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
+            <!-- الصورة 1 -->
+            <a href="gallery1.jpg" data-fancybox="wedding-gallery" class="relative group overflow-hidden rounded-2xl shadow-lg border-2 border-gold/10 aspect-[4/3] block transition transform hover:scale-105">
+                <img src="gallery1.jpg" alt="Fady & Mariam 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gold/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <i class="fas fa-search-plus text-white text-3xl"></i>
+                </div>
+            </a>
+            <!-- الصورة 2 -->
+            <a href="gallery2.jpg" data-fancybox="wedding-gallery" class="relative group overflow-hidden rounded-2xl shadow-lg border-2 border-gold/10 aspect-[4/3] block transition transform hover:scale-105">
+                <img src="gallery2.jpg" alt="Fady & Mariam 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gold/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <i class="fas fa-search-plus text-white text-3xl"></i>
+                </div>
+            </a>
+            <!-- الصورة 3 -->
+            <a href="gallery3.jpg" data-fancybox="wedding-gallery" class="relative group overflow-hidden rounded-2xl shadow-lg border-2 border-gold/10 aspect-[4/3] block transition transform hover:scale-105">
+                <img src="gallery3.jpg" alt="Fady & Mariam 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gold/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <i class="fas fa-search-plus text-white text-3xl"></i>
+                </div>
+            </a>
+            <!-- الصورة 4 -->
+            <a href="gallery4.jpg" data-fancybox="wedding-gallery" class="relative group overflow-hidden rounded-2xl shadow-lg border-2 border-gold/10 aspect-[4/3] block transition transform hover:scale-105">
+                <img src="gallery4.jpg" alt="Fady & Mariam 4" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gold/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <i class="fas fa-search-plus text-white text-3xl"></i>
+                </div>
+            </a>
+        </div>
+    </section>
+
     <!-- RSVP Section -->
-    <section id="rsvp" class="py-25 bg-white px-4">
+    <section id="rsvp" class="py-24 bg-champagne px-4">
         <div class="max-w-md mx-auto text-center">
             <h3 class="text-3xl font-bold text-gold mb-4">تأكيد الحضور</h3>
             <p class="text-gray-600 mb-8">يسعدنا أن تشاركونا فرحتنا، يرجى تأكيد حضوركم</p>
@@ -118,62 +155,19 @@
     </section>
 
     <!-- Footer Dynamic Admin Access -->
-    <footer class="py-8 text-center text-xs text-gray-400 bg-champagne">
+    <footer class="py-8 text-center text-xs text-gray-400 bg-white border-t border-gray-100">
         <p id="copyright">© 2026 Fady & Mariam. All Rights Reserved.</p>
     </footer>
 
-<section id="gallery" class="py-24 bg-white px-4 text-center">
-        <h3 class="font-luxury text-5xl text-gold mb-4 animate-fade-in">عقدنا قِراننا</h3>
-        <p class="text-gray-500 max-w-md mx-auto mb-16 font-light">لمحات من حبنا، شاركونا فرحة العمر</p>
-
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
-            
-            <a href="gallery1.jpg" data-fancybox="wedding-gallery" data-caption="فادي ومريم - فرحة البداية" class="relative group overflow-hidden rounded-2xl shadow-lg border-2 border-gold/10 aspect-[4/3] block transition transform hover:scale-105">
-                <img src="gallery1.jpg" alt="Fady & Mariam Wedding Gallery 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                <div class="absolute inset-0 bg-gold/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                    <i class="fas fa-search-plus text-white text-3xl"></i>
-                </div>
-            </a>
-
-            <a href="gallery2.jpg" data-fancybox="wedding-gallery" data-caption="لحظات من السعادة" class="relative group overflow-hidden rounded-2xl shadow-lg border-2 border-gold/10 aspect-[4/3] block transition transform hover:scale-105">
-                <img src="gallery2.jpg" alt="Fady & Mariam Wedding Gallery 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                <div class="absolute inset-0 bg-gold/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                    <i class="fas fa-search-plus text-white text-3xl"></i>
-                </div>
-            </a>
-
-            <a href="gallery3.jpg" data-fancybox="wedding-gallery" data-caption="حب يجمعنا دائماً" class="relative group overflow-hidden rounded-2xl shadow-lg border-2 border-gold/10 aspect-[4/3] block transition transform hover:scale-105">
-                <img src="gallery3.jpg" alt="Fady & Mariam Wedding Gallery 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                <div class="absolute inset-0 bg-gold/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                    <i class="fas fa-search-plus text-white text-3xl"></i>
-                </div>
-            </a>
-
-            <a href="gallery4.jpg" data-fancybox="wedding-gallery" data-caption="معاً وإلى الأبد" class="relative group overflow-hidden rounded-2xl shadow-lg border-2 border-gold/10 aspect-[4/3] block transition transform hover:scale-105">
-                <img src="gallery4.jpg" alt="Fady & Mariam Wedding Gallery 4" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                <div class="absolute inset-0 bg-gold/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                    <i class="fas fa-search-plus text-white text-3xl"></i>
-                </div>
-            </a>
-
-        </div>
-    </section>
-
+    <!-- Fancybox Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <script>
         Fancybox.bind("[data-fancybox]", {
-            // إعدادات اختيارية لتخصيص المعرض
-            Thumbs: {
-                autoStart: true,
-            },
-            Toolbar: {
-                display: {
-                    left: ["infobar"],
-                    middle: ["zoomIn", "zoomOut", "toggle1to1"],
-                    right: ["slideshow", "fullscreen", "download", "close"],
-                },
-            },
+            Thumbs: { autoStart: true },
+            Toolbar: { display: { right: ["slideshow", "fullscreen", "download", "close"] } }
         });
-    </script></body>
+    </script>
+    <script src="app.js"></script>
+</body>
 </html>
